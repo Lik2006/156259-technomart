@@ -49,8 +49,10 @@
              </ul>
            </nav>
            <div class="popular ">Перфораторы </div>
-           <div class="filtr ">Фильтр </div>
-           <h2>Цена</h2>
+           <div class="filter ">Фильтр </div>
+           <form class="selection" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+           <legend>Цена</legend>
            <div class="range-filter">
             <div class="range-controls">
                 <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
@@ -62,9 +64,7 @@
                 - <input class="max-price" type="text" value="30000">
             </div>
         </div>
-        <form class="selection" action="https://echo.htmlacademy.ru" method="post">
-         <fieldset>
-      <h2>Производители:</h2>
+      <legend>Производители:</legend>
            <label><input type="checkbox" checked name="BOSCH">
             BOSCH</label>
            <label><input type="checkbox"  name="ИНТЕРСКОЛ">
@@ -76,7 +76,7 @@
             <label><input type="checkbox"  name="HITACH">
             HITACH</label>
 
-    <h2>Питание:</h2>
+    <legend>Питание:</legend>
             <label><input type="radio" name="question-one" value="1">
             АККУМУЛЯТОРНЫЕ </label>
             <label><input type="radio" name="question-one" value="2" checked>
@@ -90,6 +90,8 @@
          <a href="#">по цене</a>
          <a href="#">по типу</a>
          <a href="#">по функционалу</a>
+         <span class="sorting-down"></span>
+         <span class="sorting-up"></span>
        </div>
        <div class="catalog-items">
        <div class="catalog-item">
