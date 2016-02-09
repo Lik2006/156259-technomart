@@ -33,7 +33,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 17px;
-  text-align: center;
+
 
 
 
@@ -48,6 +48,7 @@ body {
     margin-left: 10px;
     text-transform: uppercase;
     box-shadow: 0 5px 0 0 #b52933;
+    text-align: center;
 }
 .logo:hover {
   background-color:#ca2c37;
@@ -56,6 +57,8 @@ body {
   float: left;
   width: 220px;
   padding-left: 50px;
+  line-height:20px;
+  text-align: left;
 }
 .find:hover {
     background-color: #ffffff;
@@ -63,29 +66,43 @@ body {
   }
 .share{
   float: left;
-  
+  width: 100px;
+  padding-left: 40px;
+  line-height:20px;
+  text-align: left;
 }
+.share:hover {
+    background-color: #212a3a;
+  }
 .basket{
   float: left;
-
+  width: 100px;
+  padding-left: 60px;
+  line-height:20px;
+  text-align: left;
 }
+.basket:hover {
+    background-color: #212a3a;
+  }
 .order{
   float: right;
-  padding: 10px 20px;
+  margin-right: 10px;
+  width: 150px;
   background-color: #63a63e;
-  text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 20px;
-  color: #000000
-  vertical-align: top;
+  text-align: center;
+
+
 }
 .info{
   float: left;
-  padding-top: 55px;
-  margin-left: 60px;
+  width: 210px;
+  padding-top: 45px;
+  padding-left: 75px;
   color: #ef5c67;
   font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
 }
 .contact{
   float: left;
@@ -94,6 +111,7 @@ body {
   width: 270px;
 }
 .contact p{
+
   color: #32425c;
   font-style: italic;
   font-size: 12px;
@@ -109,6 +127,7 @@ body {
 .user-block{
   float: right;
   margin-top: 45px;
+  margin-right: 10px;
   max-width: 280px;
 
 }
@@ -147,6 +166,8 @@ body {
 
 .main-navigation{
   float: left;
+  margin-left: 10px;
+  margin-top: 50px;
   width: 940px;
   min-height: 60px;
 }
@@ -188,13 +209,80 @@ body {
   width: 300px;
   min-height: 120px;
 }
-.performator{
+.content-little h2{
   float: left;
+  padding-left: 25px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+
+}
+.content-little img{
+  float: right;
+  padding-top: 25px;
+  padding-right: 40px;
+
+}
+.content-little a{
+  float: left;
+  width: 130px;
+  min-height: 25px;
+  margin-left: 25px;
+  background-color: rgba(299, 299, 299, 0.3);
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+.perforator{
+  float: left;
+  position: relative;
   margin: 10px;
   width: 620px;
   min-height: 260px;
   background: url(../img/Perf.png) no-repeat;
 }
+
+.perforator-description{
+  margin-left: 25px;
+  color: #ffffff;
+}
+.perforator-description h1{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: -15px;
+}
+.perforator-description p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.perf{
+  position: absolute;
+left: 25px;
+top: 210px;
+}
+.button{
+
+  background-color: #ee3643;
+  color: #ffffff;
+  text-align: center;
+  padding:10px 50px;
+  font-size: 14px;
+  line-height: 20px;.
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a .button{
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .material{
   background-color: #f6b22d;
 }
