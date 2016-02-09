@@ -23,41 +23,51 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-.header-top{
-
+.main-header-top{
   background-color: #293449;
-
 }
-.header-top a{
+.main-header-top a {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #ffffff;
-  text-decoration:none;
-  font-size: 15px;
+  text-decoration: none;
+  font-size: 17px;
   text-align: center;
-  padding-top: 10px;
+
+
 
 }
-.logo{
+.logo {
   float: left;
   width: 220px;
-  height: 30px;
+  font-size: 24px;
+  padding-top: 9px;
+  padding-bottom: 9px;
     background-color: #ee3643;
     margin-left: 10px;
-    color: #ffffff;
     text-transform: uppercase;
-    text-align: center;
-    padding-top: 10px;
+    box-shadow: 0 5px 0 0 #b52933;
 }
+.logo:hover {
+  background-color:#ca2c37;
+  }
 .find{
   float: left;
-  margin-left: 40px;
+  width: 220px;
+  padding-left: 50px;
 }
+.find:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 .share{
   float: left;
-  margin-left: 200px;
+  
 }
 .basket{
   float: left;
-  margin-left: 65px;
+
 }
 .order{
   float: right;
