@@ -517,49 +517,116 @@ a .button{
 }
 
 .tehno{
-  float: left;
-  font-size: 30px;
-  line-height: 30px;
+  display: inline-block;
   padding: 15px 40px;
     background-color: #ee3643;
     margin-left: 10px;
     text-transform: uppercase;
     box-shadow: 0 5px 0 0 #b52933;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
+    color: #fff;
 }
-.footer-button{
-  float: right;
-  margin-right: 10px;
+.footer-button-1{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 95px;
+  width: 630px;
+  border: 1px solid red;
 }
-.footer-button ul {
-  margin: 0;
+.footer-button-1 ul {
+
   padding: 0;
-
   list-style: none;
+
 }
 
-.footer-button li {
+.footer-button-1 li {
   display: inline-block;
   vertical-align: top;
   padding-left: 60px;
-  padding-top: 40px;
+  font-size: 18px;
+  text-align: 24px;
 }
-.footer-button li .yellow{
-  margin-top: -20px;
+.footer-button-1 a {
+  font-size: 18px;
+  text-align: 24px;
+  text-decoration: none;
+  color: #fff;
 }
 
+
+
 .address{
-  float: left;
-  width: 340px;
+  display: inline-block;
+  width: 320px;
+  margin-top: 20px;
+  min-height: 24px;
+  font-size: 18px;
+  text-align: 24px;
+  color: #fff;
+
+  border: 1px solid red;
 }
-.footer{
-  float: left;
-  width: 960px;
+
+.footer-button-2{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 615px;
+  border: 1px solid red;
 }
+.footer-button-2 ul {
+
+  padding: 0;
+  list-style: none;
+
+}
+
+.footer-button-2 li {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 60px;
+  font-size: 18px;
+  text-align: 24px;
+}
+.footer-button-2 a {
+  font-size: 18px;
+  text-align: 24px;
+  text-decoration: none;
+  color: #ffd180;
+}
+
 .footer-bottom{
   background-color: #293449;
   min-height: 105px;
+  font-size: 16px;
+  text-align: 18px;
+  color: #fff;
+
 }
+.footer-contacts{
+  float: left;
+  width: 240px;
+}
+.footer-social{
+  float: left;
+  width: 200px;
+}
+.footer-communication{
+  float: right;;
+  width: 160px;
+}
+.footer-copyright{
+  float: right;;
+  width: 160px;
+}
+.yellow{
+  color: #ffd180;
+}
+
 
 
 
