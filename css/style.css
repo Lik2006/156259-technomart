@@ -13,6 +13,7 @@ body {
   display: table;
   clear: both;
 }
+                                             /* Голова начало*/
 .main-header{
   width: 1200px;
   height: 320px;
@@ -166,8 +167,10 @@ body {
 
 .main-navigation{
   float: left;
+
   margin-left: 10px;
   margin-top: 50px;
+
   width: 940px;
   min-height: 60px;
 }
@@ -198,6 +201,9 @@ body {
 .main-navigation a:hover {
   background: #293449;
 }
+                                             /* Голова конец*/
+                                             /* Контейнер Index  начало*/
+
 .content{
   float: left;
   width: 960px;
@@ -306,7 +312,7 @@ a .button{
   position: relative;
   width: 950px;
   height: 90px;
-  margin-top: 50px;
+  margin-top: 15px;
   background-color: #f7f3ec;
 }
 .popular h2{
@@ -345,8 +351,10 @@ a .button{
   text-align: center;
   border: 1px solid #ccc;
 }
-.product:last-child{
-  margin-right: 0;
+
+.indent{
+  margin-left: 20px;
+  margin-right: 0px;
 }
 .new:before {
   position: absolute;
@@ -511,6 +519,8 @@ a .button{
   height: 380px;
   margin-top: 80px;
 }
+                                             /* Контейнер Index конец*/
+                                             /* Подвал начало*/
 .main-footer{
   background-color: #32425c;
   min-height: 195px;
@@ -533,7 +543,7 @@ a .button{
   margin-top: 10px;
   margin-left: 95px;
   width: 630px;
-  border: 1px solid red;
+  border: 1px solid lime;
 }
 .footer-button-1 ul {
 
@@ -626,7 +636,69 @@ a .button{
 .yellow{
   color: #ffd180;
 }
+                                             /* Подвал конец*/
+                                             /* Свойства каталога начало*/
+.breadcrumbs {
+  position: relative;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 25px;
+  padding: 0;
 
+  list-style: none;
+}
+.breadcrumbs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 40px;
+  text-transform: uppercase;
+}
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs li::before {
+  content: "";
+  position: absolute;
+  background-image:url(../img/.icon-right.png);
+  width: 8px;
+  height:12px;
+  top: 4px;
+  left: -20px;
+}
+.breadcrumbs ul::before{
+  content: "";
+  position: absolute;
+  background-image:url(../img/.icon-home.png);
+  width: 15px;
+  height:12px;
+  top: 4px;
+  left: -10px;
+}
+                                           /* Свойства  Catalog содержание начало*/
+
+.filter{
+  float: left;
+  width: 220px;
+}
+.sorting{
+  float: right;
+  width: 700px;
+}
+.catalog-products{
+  float: right;
+  width: 710px;
+}
+ .product:nth-child(3n+3){
+  margin-right: 0;
+}
+
+                                           /* Свойства  Catalog содержание конец*/
+                                             /* Свойства каталога конец*/
 
 
 
