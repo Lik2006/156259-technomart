@@ -57,10 +57,10 @@
               <h2>Перфораторы</h2>
           </div>
            <div class="filter ">
-             <h2>Фильтр</h2>
+             <p>Фильтр:</p>
            <form class="selection" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-           <legend>Цена</legend>
+           <legend><h2>Цена:</h2></legend>
            <div class="range-filter">
             <div class="range-controls">
                 <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
@@ -72,23 +72,23 @@
                 - <input class="max-price" type="text" value="30000">
             </div>
         </div>
-      <legend>Производители:</legend>
-           <label><input type="checkbox" checked name="BOSCH">
-            BOSCH</label>
-           <label><input type="checkbox"  name="ИНТЕРСКОЛ">
-           ИНТЕРСКОЛ</label>
-           <label><input type="checkbox" checked name="MAKITA">
-            MAKITA</label>
-            <label><input type="checkbox"  name="DEWALT">
-            DEWALT</label>
-            <label><input type="checkbox"  name="HITACH">
-            HITACH</label>
+      <legend><h2>Производители:</h2></legend>
+           <input type="checkbox" checked id="BOSCH">
+            <label for="BOSCH">BOSCH</label>
+           <input type="checkbox" id="interskol">
+           <label for="interskol">ИНТЕРСКОЛ</label>
+           <input type="checkbox" checked id="MAKITA">
+            <label for="MAKITA">MAKITA</label>
+            <input type="checkbox"  id="DEWALT">
+            <label for="DEWALT">DEWALT</label>
+            <input type="checkbox"  id="HITACH">
+            <label for="HITACH">HITACH</label>
 
-    <legend>Питание:</legend>
-            <label><input type="radio" name="question-one" value="1">
-            АККУМУЛЯТОРНЫЕ </label>
-            <label><input type="radio" name="question-one" value="2" checked>
-            Сетевые</label>
+    <legend><h2>Питание:</h2></legend>
+            <input type="radio" id="battery"name="question-one" value="1">
+            <label for="battery">АККУМУЛЯТОРНЫЕ </label>
+            <input type="radio"  id="net" name="question-one" value="2" checked>
+            <label for="net">Сетевые</label>
 
         <input class="button" type="submit" value="Показать">
       </fieldset>

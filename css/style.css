@@ -636,7 +636,111 @@ a .button{
 .yellow{
   color: #ffd180;
 }
-                                             /* Подвал конец*/
+                                             /* Подвал конец
+                                             .sprite {
+                                                 background-image: url(spritesheet.png);
+                                                 background-repeat: no-repeat;
+                                                 display: block;
+                                             }
+
+                                             .sprite--icon-basket {
+                                                 width: 17px;
+                                                 height: 16px;
+                                                 background-position: -5px -5px;
+                                             }
+
+                                             .sprite--icon-bookmark {
+                                                 width: 14px;
+                                                 height: 16px;
+                                                 background-position: -5px -31px;
+                                             }
+
+                                             .sprite--icon-check-off {
+                                                 width: 23px;
+                                                 height: 23px;
+                                                 background-position: -5px -57px;
+                                             }
+
+                                             .sprite--icon-check-on {
+                                                 width: 27px;
+                                                 height: 23px;
+                                                 background-position: -5px -90px;
+                                             }
+
+                                             .sprite--icon-circle {
+                                                 width: 25px;
+                                                 height: 25px;
+                                                 background-position: -5px -123px;
+                                             }
+
+                                             .sprite--icon-circle-dot {
+                                                 width: 25px;
+                                                 height: 25px;
+                                                 background-position: -5px -158px;
+                                             }
+
+                                             .sprite--icon-facebook {
+                                                 width: 10px;
+                                                 height: 18px;
+                                                 background-position: -5px -193px;
+                                             }
+
+                                             .sprite--icon-home {
+                                                 width: 15px;
+                                                 height: 12px;
+                                                 background-position: -5px -221px;
+                                             }
+
+                                             .sprite--icon-instagramm {
+                                                 width: 17px;
+                                                 height: 17px;
+                                                 background-position: -5px -243px;
+                                             }
+
+                                             .sprite--icon-login {
+                                                 width: 20px;
+                                                 height: 17px;
+                                                 background-position: -5px -270px;
+                                             }
+
+                                             .sprite--icon-logout {
+                                                 width: 21px;
+                                                 height: 17px;
+                                                 background-position: -5px -297px;
+                                             }
+
+                                             .sprite--icon-phone {
+                                                 width: 19px;
+                                                 height: 19px;
+                                                 background-position: -5px -324px;
+                                             }
+
+                                             .sprite--icon-right {
+                                                 width: 8px;
+                                                 height: 12px;
+                                                 background-position: -5px -353px;
+                                             }
+
+                                             .sprite--icon-search {
+                                                 width: 17px;
+                                                 height: 17px;
+                                                 background-position: -5px -375px;
+                                             }
+
+                                             .sprite--icon-user {
+                                                 width: 20px;
+                                                 height: 18px;
+                                                 background-position: -5px -402px;
+                                             }
+
+                                             .sprite--icon-vk-copy {
+                                                 width: 20px;
+                                                 height: 12px;
+                                                 background-position: -5px -430px;
+                                             }
+
+
+                                             */
                                              /* Свойства каталога начало*/
 .breadcrumbs {
   position: relative;
@@ -681,9 +785,100 @@ a .button{
 }
                                            /* Свойства  Catalog содержание начало*/
 
+
 .filter{
   float: left;
   width: 220px;
+}
+.filter p{
+  width: 200px;
+  font-size: 13px;
+  line-height: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+
+}
+.selection h2{
+  width: 220px;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+}
+.selection h2:nth-of-type(3){
+  border-top: 1px solid #e5e5e5;
+}
+fieldset{
+  border: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+input[type="checkbox"]+label{
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-image:url(../img/sprite.png);
+    width: 23px;
+    height: 23px;
+    background-position: -5px -57px;
+}
+input[type="checkbox"]:checked+label::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-image:url(../img/sprite.png);
+    width: 27px;
+    height: 23px;
+    background-position: -5px -90px;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]+label{
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input[type="radio"]+label::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image:url(../img/sprite.png);
+    width: 25px;
+    height: 25px;
+    background-position: -5px -123px;
+}
+input[type="radio"]:checked+label::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image:url(../img/sprite.png);
+    width: 25px;
+    height: 25px;
+    background-position: -5px -158px;
 }
 .sorting{
   float: right;
