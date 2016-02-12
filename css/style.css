@@ -206,8 +206,7 @@ body {
 
 .content{
   float: left;
-  width: 960px;
-  min-height: 410px;
+
 }
 .content-little{
   position: relative;
@@ -500,11 +499,15 @@ a .button{
   background-repeat: no-repeat;
   background-position: center;
 }
+.background-services{
+  margin-top: 90px;
+  background-color: #f2f6f8;
+
+}
 .services{
   float: left;
   width: 960px;
   height: 520px;
-  margin-top: 90px;
   border: 1px solid #e7e7e7;
 }
 .company{
