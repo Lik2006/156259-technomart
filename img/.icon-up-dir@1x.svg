@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 23px;
+        font-family: symbols-technomart, symbols;
+      }
+    </style>
+  </defs>
+  <text id="_.icon-up-dir" data-name=".icon-up-dir" class="cls-1" x="0.431" y="12.798">▲</text>
+</svg>

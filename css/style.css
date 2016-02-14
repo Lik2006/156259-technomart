@@ -16,7 +16,7 @@ body {
                                              /* Голова начало*/
 .main-header{
   width: 1200px;
-  height: 320px;
+
   background-color: #f1f5f7;
   margin: 0 auto;
 }
@@ -166,21 +166,20 @@ body {
 
 
 .main-navigation{
+  display: block;
   float: left;
-
-  margin-left: 10px;
   margin-top: 50px;
 
-  width: 940px;
   min-height: 60px;
 }
 .main-navigation ul {
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   list-style: none;
   font-size: 0;
-
-}
+    width: 940px;
+  }
 .main-navigation li {
   display: inline-block;
 
@@ -192,20 +191,33 @@ body {
   background: #32425c;
   display: block;
   padding: 20px;
-  padding-right: 40px;
+  padding-right: 45px;
 
   box-shadow: 0 5px 0 0 #293449;
   color: #ffffff;
   text-decoration: none;
 }
+.main-navigation li:first-child a{
+  padding-left: 50px;
+}
+.main-navigation li:last-child a{
+  padding-right: 30px;
+}
 .main-navigation a:hover {
   background: #293449;
 }
+.main-navigation a:active{
+  background: #1d2739;
+  box-shadow: 0 5px 0 0 #1d2739;
+  color: #8e939c;
+}
+
                                              /* Голова конец*/
                                              /* Контейнер Index  начало*/
 
 .content{
   float: left;
+  margin-top: 60px;
 
 }
 .content-little{
@@ -275,21 +287,29 @@ width: 160px;
 
 }
 .button{
-  background-color: #ee3643;
-  color: #ffffff;
-  text-align: center;
+  display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   font-size: 14px;
-  line-height: 20px;.
+  line-height: 20px;
+  background-color: #ee3643;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 5px;
 }
-a .button{
-  text-transform: uppercase;
-  text-decoration: none;
-}
+/*display: inline-block;
+padding: 12px 45px;
+font-size: 14px;
+line-height: 15px;
+vertical-align: top;
+color: #ffffff;
+text-decoration: none;
+background-color: #ee3643;
+text-transform: uppercase;
+
+border-radius: 5px;*/
 
 .material{
   background-color: #f6b22d;
@@ -336,9 +356,10 @@ a .button{
   width: 960px;
   min-height: 320px;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 0px;
 }
 .product{
+  font-size:16px;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -459,45 +480,37 @@ a .button{
   margin: 10px;
   border: 1px solid #e7e7e7;
 }
-.bosch{
-  background-image: url(../img/bosch.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.bosch img{
+  padding-top: 50px;
+  padding-left: 45px;
 }
-.makita{
-  background-image: url(../img/makita.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.makita img{
+  padding-top: 50px;
+  padding-left: 45px;
 }
-.dewalt{
-  background-image: url(../img/dewalt.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.dewalt img{
+  padding-top: 50px;
+  padding-left: 35px;
 }
-.interskol{
-  background-image: url(../img/interskol.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.interskol img{
+  padding-top: 30px;
+  padding-left: 9px;
 }
-.hitachi{
-  background-image: url(../img/hitachi.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.hitachi img{
+  padding-top: 58px;
+  padding-left: 25px;
 }
-.lg{
-  background-image: url(../img/lg.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.lg img{
+  padding-top: 37px;
+  padding-left: 48px;
 }
-.aeg{
-  background-image: url(../img/aeg.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.aeg img{
+  padding-top: 26px;
+  padding-left: 33px;
 }
-.metabo{
-  background-image: url(../img/metabo.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.metabo img{
+  padding-top: 40px;
+  padding-left: 7px;
 }
 .background-services{
   margin-top: 90px;
@@ -507,9 +520,75 @@ a .button{
 .services{
   float: left;
   width: 960px;
-  height: 520px;
+  min-height: 520px;
   border: 1px solid #e7e7e7;
 }
+.slider-controls{
+  display: block;
+  float: left;
+  margin-top: 75px;
+}
+
+.slider-controls label{
+  display: block;
+  width: 215px;
+  font-size: 21px;
+  line-height: 30px;
+  padding-top:10px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  background-color: #32425c;
+  color: #ffffff;
+}
+.slider-controls label:hover{
+  background-color: #293449;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+#btn-1:checked ~ .slider #slide1,
+#btn-2:checked ~ .slider #slide2,
+#btn-3:checked ~ .slider #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #ffffff;
+  color: #32425c;
+}
+.slide-description{
+  float: left;
+  margin-top: 75px;
+  margin-left: 80px;
+  width: 280px;
+}
+.slide-img {
+  position: absolute;
+  right: 0px;
+  top: 75px;
+}
+.slide-btn{
+  display: inline-block;
+  padding: 12px 45px;
+  font-size: 14px;
+  line-height: 15px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ee3643;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+
+}
+
+
+
 .company{
   float: left;
   width: 550px;
@@ -623,10 +702,42 @@ a .button{
 .footer-contacts{
   float: left;
   width: 240px;
+  margin-top: 40px;
 }
 .footer-social{
   float: left;
   width: 200px;
+  margin-left: 150px;
+  margin-top: 35px;
+  border: 1px solid red;
+}
+.social-btn{
+  display: block;
+  float: left;
+  margin-left: 5px;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #212a3a;
+  border: 4px solid #212a3a;
+
+}
+.social-btn-vk{
+  background-image:url(../img/sprite.png);
+  background-position: 0px -420px;
+  width: 32px;
+  height: 32px;
+}
+.social-btn-fb{
+  background-image:url(../img/sprite.png);
+  background-position: 5px -185px;
+  width: 32px;
+  height: 32px;
+}
+.social-btn-inst{
+  background-image:url(../img/sprite.png);
+  background-position: 2px -235px;
+  width: 32px;
+  height: 32px;
 }
 .footer-communication{
   float: right;;
@@ -635,6 +746,7 @@ a .button{
 .footer-copyright{
   float: right;;
   width: 160px;
+
 }
 .yellow{
   color: #ffd180;
@@ -756,12 +868,11 @@ a .button{
 }
 .breadcrumbs li {
   position: relative;
-
   display: inline;
-  padding-right: 40px;
   text-transform: uppercase;
 }
 .breadcrumbs a {
+  padding-right: 40px;
   color: #000000;
   text-decoration: none;
 }
@@ -792,6 +903,8 @@ a .button{
 .filter{
   float: left;
   width: 220px;
+  min-height: 1300px;
+
 }
 .filter p{
   width: 200px;
@@ -802,8 +915,92 @@ a .button{
   padding-left: 20px;
   text-transform: uppercase;
   background-color: #f7f3ec;
+}
+form{
+  margin-left: -10px;
 
 }
+                                           /* Фильтр начало*/
+.range-filter {
+  width: 220px;
+
+
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 30px;
+}
+
+.range-controls .toggle-max {
+  left: 140px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 75px;
+
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f7f3ec;
+}
+
+
+                                           /* Фильтр конец*/
 .selection h2{
   width: 220px;
   font-size: 17px;
@@ -883,16 +1080,119 @@ input[type="radio"]:checked+label::before {
     height: 25px;
     background-position: -5px -158px;
 }
+.selection-button{
+  margin-top: 70px;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+.selection-button:hover{
+  background-color: red;
+}
 .sorting{
   float: right;
   width: 700px;
+  min-height: 40px;
+  margin-top: 20px;
+
+
+}
+
+.sorting p{
+  display: block;
+  float: left;
+  margin-top: 10px;
+  width: 155px;
+  font-size: 13px;
+  line-height: 15px;
+
+  padding-left: 20px;
+  text-transform: uppercase;
+border: 1px solid red;
+
+}
+.sorting a{
+  float: left;
+  font-size: 13px;
+  line-height: 15px;
+  padding-top: 10px;
+  padding-left: 70px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.sorting .sorting-up{
+
+  padding-left: 50px;
+  border: 1px solid green;
+
+}
+.sorting .sorting-down{
+  padding-left: 20px;
 }
 .catalog-products{
   float: right;
   width: 710px;
+  font-size: 0px;
 }
  .product:nth-child(3n+3){
   margin-right: 0;
+}
+.pagination{
+  float: left;
+
+  margin-top: 55px;
+  margin-left: 25px;
+
+}
+.pagination a{
+  display: block;
+  float: left;
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.pagination .lardge{
+
+  width: 140px;
+}
+
+.pagination a:hover{
+  border: 1px solid #bdc6ca;
+}
+.pagination a:active{
+
+  border: 1px solid #ee3643;
+}
+
+
+
+
+.information{
+  background-color: #f2f6f8;
+  font-family: Cuprum, PT Sans, sans-serif;
+}
+
+.information h1{
+  padding-top: 60px;
+}
+.information p{
+  padding-bottom: 70px;
+  padding-right: 50px;
+  font-size: 13px;
+  text-align: 24px;
+
 }
 
                                            /* Свойства  Catalog содержание конец*/

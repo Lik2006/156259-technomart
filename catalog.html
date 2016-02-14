@@ -33,9 +33,9 @@
         </div>
        <nav class="main-navigation">
          <ul>
-           <li> <a href="#">Главная</a> </li>
+           <li> <a href="index.html">Главная</a> </li>
            <li> <a href="#">Компания</a> </li>
-           <li> <a href="#">Каталог</a> </li>
+           <li> <a href="catalog.html">Каталог</a> </li>
            <li> <a href="#">Новости</a> </li>
            <li> <a href="#">Спецпредложения</a> </li>
            <li> <a href="#">Доставка</a> </li>
@@ -62,16 +62,19 @@
             <fieldset>
            <legend><h2>Цена:</h2></legend>
            <div class="range-filter">
-            <div class="range-controls">
-                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-                 <input class="min-price" type="text" value="0">
-                - <input class="max-price" type="text" value="30000">
-            </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
         </div>
+        <div class="price-controls">
+          <label class="min-price"><input name="min-price" type="text" value="0">  -</label>
+          <label class="max-price"><input name="max-price" type="text" value="3000"></label>
+        </div>
+      </div>
+
       <legend><h2>Производители:</h2></legend>
            <input type="checkbox" checked id="BOSCH">
             <label for="BOSCH">BOSCH</label>
@@ -90,19 +93,27 @@
             <input type="radio"  id="net" name="question-one" value="2" checked>
             <label for="net">Сетевые</label>
 
-        <input class="button" type="submit" value="Показать">
+        <input class="selection-button" type="submit" value="Показать">
       </fieldset>
        </form>
        </div>
        <div class="sorting">
-         сортировка:
+         <p>
+           сортировка:
+         </p>
+
          <a href="#">по цене</a>
          <a href="#">по типу</a>
          <a href="#">по функционалу</a>
+         <a class="sorting-up" href="#"><img src="img/.icon-up-dir@1x.svg" alt="" /></a>
+         <a class="sorting-down" href="#"><img src="img/.icon-down-dir@1x.svg" alt="" /></a>
+
+
+         </div>
          <span class="sorting-down"></span>
          <span class="sorting-up"></span>
        </div>
-       <div class="catalog-products">
+       <div class="catalog-products clearfix">
        <div class="product">
          <div class="actions">
              <a href="#" class="buy">Купить</a>
@@ -194,28 +205,32 @@
                                <h1 class="title">Перфоратор Bosch BFG 2000</h1>
                                <div class="price-old"> </div>
                                <div class="price-new">12500 P. </div>
-
                               </div>
-                              <div class="pagination button small">
-                      <a href="#1">1</a>
-                      <a href="#2">2</a>
-                      <a href="#3">3</a>
-                      <a href="#">Следующая</a>
                   </div>
-                  <div class="information">
-                    <h1>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h1>
-                    <p>Перфоратор — универсальный строительный инструмент.
-                      Предназначен для сверления и долбления отверстий в
-                      кирпиче, бетоне и камне. Существуют электромеханические
-                      и пневматические перфораторы. Современные модели могут
-                      выполнять функции дрели, шуруповерта и отбойного молотка.
-                       В ассортиментном ряду есть выбор «трехрежимников»: в
-                       одном устройстве будут совмещены отбойный молоток и
-                       ударная дрель.
-                    </p>
-                  </div>
-            </div>
-          </main>
+                  <div class="pagination clearfix">
+          <a class="button-small"href="#1">1</a>
+          <a class="button-small"href="#2">2</a>
+          <a class="button-small"href="#3">3</a>
+          <a class="button-small lardge"href="#">Следующая</a>
+      </div>
+                  </main>
+                  <div class="information clearfix">
+                    <div class="container">
+                      <h1>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h1>
+                      <p>Перфоратор — универсальный строительный инструмент.
+                        Предназначен для сверления и долбления отверстий в
+                        кирпиче, бетоне и камне. <br>Существуют электромеханические
+                        и пневматические перфораторы. Современные модели могут
+                        выполнять функции дрели, шуруповерта и отбойного молотка.
+                         В ассортиментном ряду есть выбор «трехрежимников»: в
+                         одном устройстве будут совмещены отбойный молоток и
+                         ударная дрель.
+                      </p>
+                    </div>
+                </div>
+
+
+
           <footer class="main-footer clearfix">
             <div class="footer-top">
             <div class="container clearfix">
@@ -247,8 +262,8 @@
             <div class="footer-bottom">
               <div class="container clearfix">
                 <div class="footer-contacts">
-                  <p> © 2010–2016 Компания «Техномарт» </p>
-                  <p>Все права защищены</p>
+                  © 2010–2016 Компания «Техномарт» Все права защищены
+
                 </div>
 
               <div class="footer-social">
