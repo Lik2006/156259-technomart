@@ -300,8 +300,8 @@ opacity: 0.5;
 .info{
   float: left;
   width: 195px;
-  margin-top: 45px;
-  margin-left: 75px;
+  padding-top: 45px;
+  padding-left: 75px;
   color: #ef5c67;
   font-style: italic;
   font-size: 16px;
