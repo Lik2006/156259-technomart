@@ -169,6 +169,7 @@ body {
   display: block;
   float: left;
   margin-top: 50px;
+  margin-left: 10px;
 
   min-height: 60px;
 }
@@ -190,18 +191,16 @@ body {
 .main-navigation a {
   background: #32425c;
   display: block;
-  padding: 20px;
-  padding-right: 45px;
-
+  padding: 20px 30px;
   box-shadow: 0 5px 0 0 #293449;
   color: #ffffff;
   text-decoration: none;
 }
 .main-navigation li:first-child a{
-  padding-left: 50px;
+  padding-left: 55px;
 }
 .main-navigation li:last-child a{
-  padding-right: 30px;
+  padding-right: 55px;
 }
 .main-navigation a:hover {
   background: #293449;
@@ -246,7 +245,7 @@ body {
   width: 130px;
   min-height: 25px;
   margin-left: 25px;
-  background-color: rgba(299, 299, 299, 0.3);
+  background-color: rgba(0, 0,0, 0.1);
   font-size: 14px;
   line-height: 20px;
   padding-top: 10px;
@@ -254,6 +253,13 @@ body {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+  border-radius: 5px;
+}
+.content-little a:hover{
+    background-color: rgba(0, 0,0, 0.2);
+}
+.content-little a:active{
+    background-color: rgba(0, 0,0, 0.3);
 }
 
 .perforator{
@@ -521,7 +527,7 @@ border-radius: 5px;*/
   float: left;
   width: 960px;
   min-height: 520px;
-  border: 1px solid #e7e7e7;
+
 }
 .slider-controls{
   display: block;
@@ -591,15 +597,68 @@ border-radius: 5px;*/
 
 .company{
   float: left;
-  width: 550px;
-  height: 380px;
+  width: 560px;
   margin-top: 80px;
 }
+.company h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.company p{
+  width: 525px;
+  font-size: 13px;
+  line-height: 25px;
+}
+.company ul{
+  list-style: none;
+}
+
+.company li{
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+.company li::before{
+  content: "";
+  width: 30px;
+  position: absolute;
+  left: -40px;
+  top: 27px;
+  border: 1px solid red;
+}
+.company .button{
+  width: 220px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
 .contacts{
   float: right;
   width: 330px;
   height: 380px;
   margin-top: 80px;
+}
+.contacts h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.contacts p{
+  width: 200px;
+  font-size: 13px;
+  line-height: 25px;
+}
+.contacts img{
+  padding-top: 45px;
+}
+.contacts .button{
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
 }
                                              /* Контейнер Index конец*/
                                              /* Подвал начало*/
