@@ -309,8 +309,8 @@ opacity: 0.5;
 
 .contact{
   float: left;
-  margin-top: 50px;
-  margin-left: 65px;
+  padding-top: 50px;
+  padding-left: 65px;
   width: 270px;
   }
 .contact p{
@@ -334,8 +334,8 @@ opacity: 0.5;
 }
 .user-block{
   float: right;
-  margin-top: 50px;
-  margin-right: 10px;
+  padding-top: 50px;
+  padding-right: 10px;
   max-width: 280px;
 }
 .enter{
@@ -1318,10 +1318,7 @@ border: 1px solid red;
 }
 .pagination{
   float: left;
-
   margin-top: 55px;
-  margin-left: 25px;
-
 }
 .pagination a{
   display: block;
@@ -1339,7 +1336,6 @@ border: 1px solid red;
   border-radius: 5px;
 }
 .pagination .lardge{
-
   width: 140px;
 }
 
@@ -1347,7 +1343,6 @@ border: 1px solid red;
   border: 1px solid #bdc6ca;
 }
 .pagination a:active{
-
   border: 1px solid #ee3643;
 }
 
