@@ -1062,14 +1062,16 @@ box-shadow: none;
     line-height: 30px;
     text-align: center;
     color: #fff;
+    text-decoration: none;
 }
-.logo:hover {
+.footer-top .logo:hover {
   background-color:#ca2c37;
+  text-decoration: none;;
   }
-  .logo:active {
+.footer-top .logo:active {
     background-color:#ba2732;
     box-shadow: 0 5px 0 0 #8e1e26;
-
+    text-decoration: none;
     }
 .footer-button-1{
   display: inline-block;
@@ -1544,13 +1546,13 @@ input[type="radio"]:checked+label::before {
   width: 140px;
 }
 
-.pagination a:hover{
+.button-small:hover{
   border: 1px solid #bdc6ca;
 }
-.pagination a:active{
+.button-small:active{
   border: 1px solid #ee3643;
 }
-.pagination a:focus{
+.button-small:focus{
   background-color: #ee3643;
 }
 
