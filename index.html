@@ -305,5 +305,39 @@
         </div>
         </div>
     </footer>
+    <div class="modal-content">
+      <div class="modal-content-header clearfixs">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      </div>
+      <div class="modal-content-main clearfix">
+        <form action="/echo" method="post">
+              <fieldset>
+            <div class="half-width">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name"
+                placeholder="Представьтесь,пожалуйста">
+            </div>
+            <div class="half-width">
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" id="email" name="email"
+                placeholder="Для отправки ответа">
+                  </div>
+                  <label for="note">Текст письма:</label>
+              <textarea id="note" name="note" rows="5"
+              placeholder="В свободной форме"></textarea>
+          </fieldset>
+          <div class="buttons">
+          <input type="submit" value="Отправить">
+        </div>
+      </form>
+      </div>
+      <div class="modal-content-footer ">
+      </div>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="google-map"></div>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
