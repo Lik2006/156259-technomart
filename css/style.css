@@ -6,9 +6,13 @@ body {
   font-weight:normal;
   color: inherit;
   line-height:normal;
-  background: #ffffff;
+  background-image: url(../img/technomart-index.jpg);
+opacity: 0.6;
+background-position: 30px 0px;
+filter: grayscale(0.5);
 
 }
+
                                                                         /*Иконочные шрифты начало*/
 @font-face {
   font-weight: normal;
@@ -86,8 +90,8 @@ body {
 }
 .main-header-top a {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 7px;
   color: #ffffff;
   text-decoration: none;
   font-size: 17px;
@@ -96,12 +100,12 @@ body {
 
 
 }
-.logo {
+.main-header-top .logo {
   float: left;
   width: 220px;
   font-size: 24px;
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
     background-color: #ee3643;
     margin-left: 10px;
     text-transform: uppercase;
@@ -120,12 +124,12 @@ body {
   float: left;
   position: relative;
   width: 220px;
-  padding-left: 35px;
+  padding-left: 15px;
   line-height:20px;
   text-align: left;
 }
 .icon-search{
-  padding-right: 15px;
+  padding-right: 10px;
   opacity: 0.5;
 }
 .find:hover {
@@ -308,16 +312,19 @@ opacity: 0.5;
 .info{
   float: left;
   width: 195px;
-  padding-left: 75px;
+  margin-top: -10px;
+  padding-left: 60px;
   color: #ef5c67;
   font-style: italic;
   font-size: 16px;
+  line-height: 22px;
   }
 
 .contact{
   float: left;
-  padding-left: 65px;
-  width: 270px;
+  padding-left: 70px;
+  width: 250px;
+
   }
 .contact p{
   color: #32425c;
@@ -325,39 +332,43 @@ opacity: 0.5;
   font-size: 12px;
 }
 .tel{
-  width: 215px;
+  width: 210px;
   height: 30px;
-  padding-left: 15px;
-  padding-top: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
   padding-right: 50px;
   font-size: 21px;
   color: red;
   border: 5px solid #ffffff;
 }
 .icon-phone{
-  padding-right: 40px;
+  padding-right: 30px;
   color: #b7bfc8;
 }
 .user-block{
   float: right;
   padding-right: 10px;
-  max-width: 280px;
+  max-width: 290px;
 }
 .enter{
   display: inline-block;
   background-color: #ffffff;
-  padding: 15px 25px;
-  padding-left: 16px;
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+  padding-right: 30px;
+  font-size: 21px;
+  line-height: 23px;
   margin-right: 10px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 16px;
+
   color: #000000;
   text-decoration: none;
   vertical-align: top;
+  border: 1px solid orange;
 }
 .icon-logout{
-  padding-right: 10px;
+  padding-right: 5px;
+  padding-left: 10px;
   opacity: 0.4;
 }
 .enter:hover {
@@ -376,13 +387,16 @@ opacity: 0.5;
 .registration{
   display: inline-block;
   background-color: #ffffff;
-  padding: 15px 25px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 16px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  font-size: 21px;
+  line-height: 23px;
   color: #000000;
   text-decoration: none;
   vertical-align: top;
+  border: 1px solid orange;
 }
 
 .registration:hover {
@@ -467,7 +481,7 @@ opacity: 0.5;
 .main-navigation{
   display: block;
   float: left;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-left: 10px;
 
   min-height: 60px;
@@ -515,15 +529,19 @@ opacity: 0.5;
 
 .content{
   float: left;
-  margin-top: 60px;
+  margin-top: 50px;
 
 }
 .content-little{
   position: relative;
   float: left;
+
   margin: 10px;
+  margin-top: 12px;
+  margin-left: 8px;
   width: 300px;
   min-height: 120px;
+
 }
 .content-little h2{
   float: left;
