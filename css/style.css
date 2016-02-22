@@ -7,7 +7,7 @@ body {
   color: inherit;
   line-height:normal;
   background: #ffffff;
-  
+
 }
                                                                         /*Иконочные шрифты начало*/
 @font-face {
@@ -1361,6 +1361,12 @@ form{
 }
 fieldset{
   border: none;
+  margin-bottom: 15px;
+}
+legend{
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 input[type="checkbox"]{
   display: none;
@@ -1704,6 +1710,7 @@ input[type="radio"]:checked+label::before {
   background: #e9e5dc url("img/map.png");
 }
 .modal-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
