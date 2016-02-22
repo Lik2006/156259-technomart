@@ -7,8 +7,9 @@ body {
   color: inherit;
   line-height:normal;
   background-image: url(../img/technomart-index.jpg);
+  background-repeat: no-repeat;
 opacity: 0.6;
-background-position: 30px 0px;
+background-position: 192px 0px;
 filter: grayscale(0.5);
 
 }
@@ -530,6 +531,8 @@ opacity: 0.5;
 .content{
   float: left;
   margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 0px;
 
 }
 .content-little{
@@ -537,30 +540,25 @@ opacity: 0.5;
   float: left;
 
   margin: 10px;
-  margin-top: 12px;
-  margin-left: 8px;
-  width: 300px;
-  min-height: 120px;
+
+  width: 298px;
+  min-height: 122px;
 
 }
 .content-little h2{
   float: left;
-  padding-left: 25px;
+  padding-left: 20px;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
 
 }
-.content-little img{
-  float: right;
-  padding-top: 25px;
-  padding-right: 40px;
 
-}
 .content-little a{
   float: left;
   width: 130px;
   min-height: 25px;
+  margin-top: -5px;
   margin-left: 25px;
   background-color: rgba(0, 0,0, 0.1);
   font-size: 14px;
@@ -607,8 +605,8 @@ opacity: 0.5;
   font-size: 45px;
   color: #ffffff;
   text-decoration: none;
-  top: 115px;
-  left: 0px;
+  top: 110px;
+  left: 5px;
 }
 .icon-left::after{
   content: "";
@@ -626,7 +624,7 @@ opacity: 0.5;
   font-size: 45px;
   color: #ffffff;
   text-decoration: none;
-  top: 115px;
+  top: 110px;
   right: 0px;
 }
 .icon-right::after{
@@ -643,8 +641,8 @@ opacity: 0.5;
 .perf{
   position: absolute;
 left: 25px;
-top: 210px;
-width: 160px;
+top: 205px;
+width: 195px;
 }
 .button{
   display: inline-block;
@@ -681,49 +679,87 @@ border-radius: 5px;*/
 
 .material{
   background-color: #f6b22d;
+  border: 1px solid #f6b22d;
+}
+.material img{
+  float: right;
+  padding-top: 30px;
+  padding-right: 42px;
+
 }
 .tool{
   background-color: #4aafde;
+  border: 1px solid #4aafde;
+}
+.tool img{
+  float: right;
+  padding-top: 32px;
+  padding-right: 28px;
+
 }
 .equipment{
   background-color: #cc79d1;
+  border: 1px solid #cc79d1;
+}
+.equipment img{
+  float: right;
+  padding-top: 30px;
+  padding-right: 30px;
+
 }
 .discounts{
   background-color: #85d179;
+  border: 1px solid #85d179;
+}
+.discounts img{
+  float: right;
+  padding-top: 25px;
+  padding-right: 43px;
+
 }
 .delivery{
   background-color: #f6b22d;
+  border: 1px solid #f6b22d;
+}
+ .delivery img{
+  float: right;
+  padding-top: 30px;
+  padding-right: 30px;
+
 }
 .popular{
   float: left;
   position: relative;
-  width: 950px;
+  width: 940px;
   height: 90px;
-  margin-top: 15px;
+  margin-left: 10px;
   background-color: #f7f3ec;
 }
 .popular h2{
   padding-left: 30px;
-  padding-top: 10px;
-  font-size: 30px;
-  line-height: 30px;.
+  padding-top: 5px;
+  font-size: 28px;
+  line-height: 34px;
   text-decoration: none;
   text-transform: uppercase;
   color: #32425c;
-
 }
 .popular-position{
   position: absolute;
   width: 255px;
   left: 660px;
   top: 25px;
-
+  font-size: 13px;
+  border-left: 2px solid ;
+  border-right: 2px solid ;
 }
 .products{
   float: left;
   width: 960px;
-  min-height: 320px;
+  min-height: 310px;
   margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 10px;
   font-size: 0px;
 }
 .product{
@@ -794,9 +830,6 @@ background-color: #5fbb2d;
 background-color: #518534;
 box-shadow: none;
 }
-
-
-
 .actions .bookmark {
   width: 129px;
   padding: 7px 0;
@@ -828,14 +861,16 @@ box-shadow: none;
 
 }
 .product .title {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0 25px;
 }
 .product .price-old {
   min-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-decoration: line-through;
   color: #999;
 }
@@ -843,7 +878,10 @@ box-shadow: none;
   position: relative;
   width: 80px;
   margin: 0 auto 20px;
-  padding: 10px 30px;
+  margin-left: 40px;
+  padding: 10px 35px;
+  padding-left: 25px;
+
   color: #fff;
   line-height: 20px;
   border-radius: 3px;
@@ -859,15 +897,43 @@ box-shadow: none;
   border: 20px solid #fff;
   border-left-color: #ee3643;
 }
+.popular-producers{
+  float: left;
+  position: relative;
+  width: 940px;
+  height: 90px;
+  margin-left: 10px;
+  background-color: #f7f3ec;
+}
+.popular-producers h2{
+  padding-left: 25px;
+  padding-top: 5px;
+  font-size: 28px;
+  line-height: 34px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.popular-producers-position{
+  position: absolute;
+  width: 255px;
+  left: 660px;
+  top: 25px;
+  font-size: 13px;
+  border-left: 2px solid ;
+  border-right: 2px solid ;
+
+}
 .manufacturers{
   float: left;
   width: 960px;
   min-height: 330px;
+  margin-top: 10px;
 }
 .manufacturer{
   float: left;
   width: 218px;
-  min-height: 148px;
+  min-height: 140px;
   margin: 10px;
   border: 1px solid #e7e7e7;
 }
@@ -882,35 +948,35 @@ box-shadow: none;
   padding-left: 45px;
 }
 .makita img{
-  padding-top: 50px;
-  padding-left: 45px;
+  padding-top: 47px;
+  padding-left: 47px;
 }
 .dewalt img{
-  padding-top: 50px;
+  padding-top: 45px;
   padding-left: 35px;
 }
 .interskol img{
-  padding-top: 30px;
+  padding-top: 18px;
   padding-left: 9px;
 }
 .hitachi img{
   padding-top: 58px;
-  padding-left: 25px;
+  padding-left: 26px;
 }
 .lg img{
-  padding-top: 37px;
+  padding-top: 35px;
   padding-left: 48px;
 }
 .aeg img{
-  padding-top: 26px;
+  padding-top: 23px;
   padding-left: 33px;
 }
 .metabo img{
-  padding-top: 40px;
-  padding-left: 7px;
+  padding-top: 34px;
+  padding-left: 9px;
 }
 .background-services{
-  margin-top: 90px;
+  margin-top: 75px;
   background-color: #f2f6f8;
 
 }
@@ -920,15 +986,30 @@ box-shadow: none;
   width: 960px;
   min-height: 520px;
 }
+.services h2{
+  padding-top: 40px;
+  padding-left: 10px;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+}
+.services p{
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 23px;
+}
 .shadow{
   position: absolute;
-  left:230px;
-  top: 160px;
+  left:240px;
+  top: 180px;
 }
 .slider-controls{
   display: block;
   float: left;
-  margin-top: 75px;
+  margin-top: 58px;
+  margin-left: 10px;
 }
 
 .slider-controls label{
@@ -969,14 +1050,22 @@ box-shadow: none;
 }
 .slide-description{
   float: left;
-  margin-top: 75px;
-  margin-left: 80px;
+  margin-top: -12px;
+  margin-left: 70px;
+  padding: 0px;
   width: 280px;
+}
+.slide-description h2{
+  font-size: 34px;
+}
+.slide-description p{
+  margin-top: -3px;
+
 }
 .slide-img {
   position: absolute;
-  right: 0px;
-  top: 75px;
+  right: 10px;
+  top: 80px;
 }
 .slide-btn{
   display: inline-block;
@@ -996,20 +1085,26 @@ box-shadow: none;
 .company{
   float: left;
   width: 560px;
-  margin-top: 80px;
+  margin-top: 55px;
+  margin-left: 10px;
 }
 .company h2{
-  font-size: 30px;
+  font-size: 28px;
   line-height: 30px;
   text-transform: uppercase;
 }
 .company p{
   width: 525px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 25px;
+  padding-top: 5px;
+  margin-bottom: 0px;
 }
 .company ul{
   list-style: none;
+  margin-top: 0px;
+  margin-left: 0px;
+
 }
 
 .company li{
@@ -1021,7 +1116,7 @@ box-shadow: none;
 }
 .company li::before{
   content: "";
-  width: 30px;
+  width: 20px;
   position: absolute;
   left: -40px;
   top: 27px;
@@ -1029,33 +1124,38 @@ box-shadow: none;
 }
 .company .button{
   width: 220px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 90px;
   text-align: center;
 }
 
 .contacts{
   float: right;
-  width: 330px;
+  width: 310px;
   height: 380px;
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-left: 30px;
+  
 }
 .contacts h2{
-  font-size: 30px;
+  font-size: 28px;
   line-height: 30px;
   text-transform: uppercase;
 }
 .contacts p{
-  width: 200px;
-  font-size: 13px;
+  width: 525px;
+  font-size: 14px;
   line-height: 25px;
+  padding-top: 3px;
+  margin-bottom: 0px;
 }
+
 .contacts img{
-  padding-top: 45px;
+  padding-top: 35px;
 }
 .contacts .button{
   width: 300px;
-  margin-top: 20px;
+  margin-top: 35px;
   text-align: center;
 }
                                              /* Контейнер Index конец*/
